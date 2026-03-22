@@ -1,0 +1,9 @@
+streamlit>=1.30.0
+numpy
+pandas
+matplotlib
+seaborn
+joblib
+requests
+scikit-learn==1.7.0
+plotly == 6.5.0
