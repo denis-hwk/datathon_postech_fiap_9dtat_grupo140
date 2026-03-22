@@ -11,7 +11,7 @@ import time
 #carregando os dados 
 df_modelo = pd.read_csv('https://raw.githubusercontent.com/denis-hwk/tech_challenge_fase_4_9dtat/refs/heads/main/df_modelo.csv')
 
-############################# Streamlit ############################
+############################# Streamlit #############################
 st.markdown('<style>div[role="listbox"] ul{background-color: #6e42ad}; </style>', unsafe_allow_html=True)
 
 st.markdown("<h1 style='text-align: center; '> Formulário para Avaliação de Risco de Defasagem</h1>", unsafe_allow_html = True)

@@ -14,7 +14,7 @@ st.set_page_config(layout="wide")
 url = 'https://raw.githubusercontent.com/denis-hwk/datathon_postech_fiap_9dtat_grupo140/refs/heads/main/streamlit_app/dados/df_dashboard.csv'
 df_final = pd.read_csv(url, delimiter = ',')
 
-############################# Streamlit ############################
+############################# Streamlit #############################
 st.markdown('<style>div[role="listbox"] ul{background-color: #6e42ad}; </style>', unsafe_allow_html=True)
 
 st.markdown("<h1 style='text-align: center; '> Dashboard para Análise de Dados sobre o Passos Mágicos </h1>", unsafe_allow_html = True)
@@ -56,7 +56,6 @@ with col11:
     )
 
     st.plotly_chart(fig_ian, use_container_width=True)
-
     
 
 with col21:
