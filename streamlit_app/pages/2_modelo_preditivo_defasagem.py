@@ -26,7 +26,7 @@ input_IAA_Atual = st.number_input('Digite a nota IAA do ano atual', min_value=0.
 
 # Indicador de Engajamento do ano atual (IEG)
 st.write('### Indicador de Engajamento do ano atual (IEG)')
-input_IEG_Atual = st.number_input('Digite a nota IAA do ano atual', min_value=0.00, format="%0.1f")
+input_IEG_Atual = st.number_input('Digite a nota IEG do ano atual', min_value=0.00, format="%0.1f")
 
 # Indicador Psicossocial do ano atual (IPS)
 st.write('### Indicador Psicossocial do ano atual (IPS)')
@@ -49,7 +49,7 @@ input_IAA_A_1 = st.number_input('Digite a nota IAA do ano anterior', min_value=0
 
 # Indicador de Engajamento do ano anterior (IEG)
 st.write('### Indicador de Engajamento do ano anterior (IEG)')
-input_IEG_A_1 = st.number_input('Digite a nota IAA do ano anterior', min_value=0.00, format="%0.1f")
+input_IEG_A_1 = st.number_input('Digite a nota IEG do ano anterior', min_value=0.00, format="%0.1f")
 
 # Indicador Psicossocial do ano anterior (IPS)
 st.write('### Indicador Psicossocial do ano anterior (IPS)')
