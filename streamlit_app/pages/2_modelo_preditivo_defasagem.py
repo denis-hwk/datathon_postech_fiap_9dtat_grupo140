@@ -22,46 +22,46 @@ st.markdown("<h2 style='text-align: center; '> Indicadores do ano atual </h1>", 
 
 # Indicador de Auto Avalição do ano atual (IAA)
 st.write('### Indicador de Auto Avalição do ano atual (IAA)')
-input_IAA_Atual = float(st.number_input('Digite a nota IAA do ano atual', min_value='0.0', format="%0.1f"))
+input_IAA_Atual = st.number_input('Digite a nota IAA do ano atual', min_value='0.0', format="%0.1f")
 
 # Indicador de Engajamento do ano atual (IEG)
 st.write('### Indicador de Engajamento do ano atual (IEG)')
-input_IEG_Atual = float(st.number_input('Digite a nota IAA do ano atual', min_value='0.0', format="%0.1f"))
+input_IEG_Atual = st.number_input('Digite a nota IAA do ano atual', min_value='0.0', format="%0.1f")
 
 # Indicador Psicossocial do ano atual (IPS)
 st.write('### Indicador Psicossocial do ano atual (IPS)')
-input_IPS_Atual = float(st.number_input('Digite a nota IPS do ano atual', min_value='0.0', format="%0.1f"))
+input_IPS_Atual = st.number_input('Digite a nota IPS do ano atual', min_value='0.0', format="%0.1f")
 
 # Indicador Psicopedagógico  do ano atual (IPP)
 st.write('### Indicador Psicopedagógico do ano atual (IPP)')
-input_IPP_Atual = float(st.number_input('Digite a nota IPP do ano atual', min_value='0.0', format="%0.1f"))
+input_IPP_Atual = st.number_input('Digite a nota IPP do ano atual', min_value='0.0', format="%0.1f")
 
 # Indicador de Aprendizagem do ano atual (IDA)
 st.write('### Indicador de Engajamento do ano atual (IDA)')
-input_IDA_Atual = float(st.number_input('Digite a nota IDA do ano atual', min_value='0.0', format="%0.1f"))
+input_IDA_Atual = st.number_input('Digite a nota IDA do ano atual', min_value='0.0', format="%0.1f")
 
 # Input de indicadores do ano anterior
 st.markdown("<h2 style='text-align: center; '> Indicadores do ano anterior </h1>", unsafe_allow_html = True)
 
 # Indicador de Auto Avalição do ano anterior (IAA)
 st.write('### Indicador de Auto Avalição do ano anterior (IAA)')
-input_IAA_A_1 = float(st.number_input('Digite a nota IAA do ano anterior', min_value='0.0', format="%0.1f"))
+input_IAA_A_1 = st.number_input('Digite a nota IAA do ano anterior', min_value='0.0', format="%0.1f")
 
 # Indicador de Engajamento do ano anterior (IEG)
 st.write('### Indicador de Engajamento do ano anterior (IEG)')
-input_IEG_A_1 = float(st.number_input('Digite a nota IAA do ano anterior', min_value='0.0', format="%0.1f"))
+input_IEG_A_1 = st.number_input('Digite a nota IAA do ano anterior', min_value='0.0', format="%0.1f")
 
 # Indicador Psicossocial do ano anterior (IPS)
 st.write('### Indicador Psicossocial do ano anterior (IPS)')
-input_IPS_A_1 = float(st.number_input('Digite a nota IPS do ano anterior', min_value='0.0', format="%0.1f"))
+input_IPS_A_1 = st.number_input('Digite a nota IPS do ano anterior', min_value='0.0', format="%0.1f")
 
 # Indicador Psicopedagógico  do ano anterior (IPP)
 st.write('### Indicador Psicopedagógico do ano anterior (IPP)')
-input_IPP_A_1 = float(st.number_input('Digite a nota IPP do ano anterior', min_value='0.0', format="%0.1f"))
+input_IPP_A_1 = st.number_input('Digite a nota IPP do ano anterior', min_value='0.0', format="%0.1f")
 
 # Indicador de Aprendizagem do ano anterior (IDA)
 st.write('### Indicador de Engajamento do ano anterior (IDA)')
-input_IDA_A_1 = float(st.number_input('Digite a nota IDA do ano anterior', min_value='0.0', format="%0.1f"))
+input_IDA_A_1 = st.number_input('Digite a nota IDA do ano anterior', min_value='0.0', format="%0.1f")
 
 # Indicador de Defasagem do ano anterior (Defasagem)
 st.write('### Indicador de Defasagem do ano anterior (Defasagem)')
