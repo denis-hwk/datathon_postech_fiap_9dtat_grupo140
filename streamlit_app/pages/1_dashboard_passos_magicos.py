@@ -248,7 +248,7 @@ with col31:
         trendline='ols'
     )
 
-    st.plotly_chart(fig_ian, width='stretch')
+    st.plotly_chart(fig_iaa_ida, width='stretch')
 
 with col32:
 
