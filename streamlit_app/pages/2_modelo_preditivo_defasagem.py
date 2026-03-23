@@ -142,12 +142,12 @@ if st.button('Enviar'):
     status_text.empty()
     
     # Mostrar resultado
-    if score <= 0.4:
+    if score[-1,0] <= 0.4:
        st.write("Risco baixo de defasagem")
-    elif score > 0.4 and score > 0.6:
+    elif score[-1,0] > 0.4 and score > 0.6:
        st.write("Risco moderado de defasagem")
     else:
        st.write("Risco alto de defasagem")
 
-    percentual = score * 100
+    percentual = score[-1,0] * 100
     st.write(f"Probabilidade do aluno estar em defasagem: {percentual: 0.1f} %")
