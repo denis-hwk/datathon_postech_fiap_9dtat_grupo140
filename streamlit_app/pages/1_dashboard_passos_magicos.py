@@ -78,6 +78,7 @@ dados_IAA = pd.melt(
     var_name = 'Ano',
     value_name = 'IAA'
     )
+dados_IAA['Ano'] = dados_IAA['Ano'].str.replace('IAA_', '')
 
 # Dados IPS
 dados_IPS = df_final[['RA', 'IPS_2022', 'IPS_2023', 'IPS_2024']]
