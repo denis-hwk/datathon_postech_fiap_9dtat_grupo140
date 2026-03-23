@@ -128,8 +128,7 @@ dados_IEG_IDA = dados_IEG.merge(dados_IDA, on=['RA', 'Ano'], how='left')
 dados_eng_desempenho = dados_IEG_IDA.merge(dados_IPV, on=['RA', 'Ano'], how='left')
 
 # Dados Auto Avaliação, Aprendizagem e Engajamento
-dados_IAA_IDA = dados_IAA.merge(dados_IDA, on=['RA', 'Ano'], how='left')
-dados_autoavaliacao = dados_IAA_IDA.merge(dados_IEG, on=['RA', 'Ano'], how='left')
+dados_autoavaliacao = dados_IAA.merge(dados_IDA, on=['RA', 'Ano'], how='left').merge(dados_IEG, on=['RA', 'Ano'], how='left')
 dados_autoavaliacao.dropna(subset=['IAA', 'IDA', 'IEG'], inplace=True)
 
 # Dados Engajamento, Aprendizagem e Psicossocial
