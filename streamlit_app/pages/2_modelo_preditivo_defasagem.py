@@ -99,7 +99,9 @@ def df_train_test_split(df, test_size):
 df_train, df_test = df_train_test_split(df_modelo, 0.3)
 
 # Consolidando dados do novo cliente
-novo_cliente_modelo = pd.DataFrame([novo_aluno], columns=df_test.columns)
+novo_cliente_modelo = pd.DataFrame([novo_aluno], columns=['IAA_Atual', 'IEG_Atual', 'IPS_Atual', 'IPP_Atual', 'IDA_Atual',
+       'Defasagem_Atual', 'IAA_A-1', 'IEG_A-1', 'IPS_A-1', 'IPP_A-1',
+       'IDA_A-1', 'Defasagem_A-1'])
 
 # Adicionando novo cliente ao dataframe dos dados de teste
 df_novo_cliente  = pd.concat([df_test, novo_cliente_modelo], ignore_index=True)
