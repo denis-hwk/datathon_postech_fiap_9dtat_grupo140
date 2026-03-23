@@ -291,12 +291,12 @@ with col51:
     
     st.write('### Boxplot do Indicador Aprendizagem Anual')
 
-    fig = px.box(
+    fig_ida = px.box(
         dados_desempenho,
         x='IDA',
         color='Ano'
         )
-    st.plotly_chart(fig_ips, width='stretch')
+    st.plotly_chart(fig_ida, width='stretch')
 
 with col52:
 
@@ -315,32 +315,6 @@ col61, col62 = st.columns(2, gap="small", vertical_alignment="top", border=False
 
 with col61:
     
-    st.write('### Boxplot do Indicador Aprendizagem Anual')
-
-    fig = px.box(
-        dados_desempenho,
-        x='IDA',
-        color='Ano'
-        )
-    st.plotly_chart(fig_ips, width='stretch')
-
-with col62:
-
-    st.write('### Gráfico Média Anual IPS, IEG e IDA')
-
-    fig_media_ips_ieg_ian = px.bar(
-        media_ips_ieg_ian_anual,
-        x='Ano',
-        y=['IPS', 'IEG', 'IDA'],
-        title='Média de IPS, IEG e IDA por Ano',
-        barmode='group'
-        )
-    st.plotly_chart(fig_media_ips_ieg_ian, width='stretch')
-
-col71, col72 = st.columns(2, gap="small", vertical_alignment="top", border=False, width="stretch")
-
-with col71:
-    
     st.write('### Histograma do Indicador Psicopedagógico Anual')
 
     fig_ipp = px.histogram(
@@ -355,7 +329,7 @@ with col71:
         )
     st.plotly_chart(fig_ipp, width='stretch')
 
-with col72:
+with col62:
 
     st.write('### Matriz de Correlação IPV, IDA, IEG, IPS, IPP, IAA')
 
@@ -363,9 +337,9 @@ with col72:
     fig_matriz_corr_ipv = px.imshow(matriz_correlacao_ponto_de_virada, text_auto=True)
     st.plotly_chart(fig_matriz_corr_ipv, use_container_width=True)
 
-col81, col82 = st.columns(2, gap="small", vertical_alignment="top", border=False, width="stretch")
+col71, col72 = st.columns(2, gap="small", vertical_alignment="top", border=False, width="stretch")
 
-with col81:
+with col71:
     
     st.write('### Matriz de Correlação INDE, IDA, IEG, IPP, IPS, IAA')
 
@@ -373,7 +347,7 @@ with col81:
     fig_correlacao_inde = px.imshow(matriz_correlacao_inde, text_auto=True)
     st.plotly_chart(fig_correlacao_inde, width='stretch')
 
-with col82:
+with col72:
 
     st.write('### Dispersão Desenvolvimento Educacional e Aprendizagem')
 
@@ -386,9 +360,9 @@ with col82:
         )
     st.plotly_chart(fig_inde_ida, width='stretch')
 
-col91, col92 = st.columns(2, gap="small", vertical_alignment="top", border=False, width="stretch")
+col81, col82 = st.columns(2, gap="small", vertical_alignment="top", border=False, width="stretch")
 
-with col91:
+with col81:
     
     st.write('### Histograma do Indicador Psicopedagógico Anual')
 
@@ -401,7 +375,7 @@ with col91:
         )
     st.plotly_chart(fig_inde_ieg, width='stretch')
 
-with col92:
+with col82:
 
     st.write('### Matriz de Correlação IPV, IDA, IEG, IPS, IPP, IAA')
 
