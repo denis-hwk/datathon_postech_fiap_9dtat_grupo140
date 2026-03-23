@@ -8,7 +8,7 @@ from joblib import load
 import time
 
 #carregando os dados 
-df_modelo = pd.read_csv('https://raw.githubusercontent.com/denis-hwk/tech_challenge_fase_4_9dtat/refs/heads/main/df_modelo.csv')
+df_modelo = pd.read_csv('https://raw.githubusercontent.com/denis-hwk/datathon_postech_fiap_9dtat_grupo140/refs/heads/main/modelo/df_modelo.csv')
 
 ############################# Streamlit ############################
 st.markdown('<style>div[role="listbox"] ul{background-color: #6e42ad}; </style>', unsafe_allow_html=True)
