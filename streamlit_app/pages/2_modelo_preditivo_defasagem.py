@@ -110,7 +110,7 @@ df_novo_cliente  = pd.concat([df_test, novo_cliente_modelo], ignore_index=True)
 X_train, y_train = df_train.drop(['Defasagem_Atual'], axis=1), df_train['Defasagem_Atual']
 
 # Removendo a coluna target do teste
-previsao_novo_cliente = df_novo_cliente.drop(['novo_cliente_modelo'], axis=1)
+previsao_novo_cliente = df_novo_cliente.drop(['Defasagem_Atual'], axis=1)
 
 # Gerar previsão do modelo 
 if st.button('Enviar'):
