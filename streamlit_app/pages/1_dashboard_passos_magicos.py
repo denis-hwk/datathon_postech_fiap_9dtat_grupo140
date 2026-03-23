@@ -6,6 +6,7 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
+import statsmodels.api as sm 
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -190,7 +191,7 @@ with col11:
         )
     )
 
-    st.plotly_chart(fig_ian, use_container_width=True)
+    st.plotly_chart(fig_ian, width='stretch')
 
 with col12:
 
@@ -220,7 +221,7 @@ with col21:
     trendline='ols'
     )
 
-    st.plotly_chart(fig_ieg_ipv, use_container_width=True)
+    st.plotly_chart(fig_ieg_ipv, width='stretch')
 
 with col22:
 
@@ -232,7 +233,7 @@ with col22:
         y='IDA',
         trendline='ols'
     )
-    st.plotly_chart(fig_ieg_ida, use_container_width=True)
+    st.plotly_chart(fig_ieg_ida, width='stretch')
 
 col31, col32 = st.columns(2, gap="small", vertical_alignment="top", border=False, width="stretch")
 
@@ -247,7 +248,7 @@ with col31:
         trendline='ols'
     )
 
-    st.plotly_chart(fig_ian, use_container_width=True)
+    st.plotly_chart(fig_ian, width='stretch')
 
 with col32:
 
@@ -259,7 +260,7 @@ with col32:
         y='IEG',
         trendline='ols'
     )
-    st.plotly_chart(fig_iaa_ieg, use_container_width=True)
+    st.plotly_chart(fig_iaa_ieg, width='stretch')
 
 col41, col42 = st.columns(2, gap="small", vertical_alignment="top", border=False, width="stretch")
 
@@ -271,7 +272,7 @@ with col41:
         dados_desempenho,
         x='IPS',
         color='Ano')
-    st.plotly_chart(fig_ips, use_container_width=True)
+    st.plotly_chart(fig_ips, width='stretch')
 
 with col42:
 
@@ -282,7 +283,7 @@ with col42:
         x='IEG',
         color='Ano'
         )
-    st.plotly_chart(fig_ieg_box, use_container_width=True)
+    st.plotly_chart(fig_ieg_box, width='stretch')
 
 col51, col52 = st.columns(2, gap="small", vertical_alignment="top", border=False, width="stretch")
 
@@ -295,7 +296,7 @@ with col51:
         x='IDA',
         color='Ano'
         )
-    st.plotly_chart(fig_ips, use_container_width=True)
+    st.plotly_chart(fig_ips, width='stretch')
 
 with col52:
 
@@ -308,7 +309,7 @@ with col52:
         title='Média de IPS, IEG e IDA por Ano',
         barmode='group'
         )
-    st.plotly_chart(fig_media_ips_ieg_ian, use_container_width=True)
+    st.plotly_chart(fig_media_ips_ieg_ian, width='stretch')
 
 col61, col62 = st.columns(2, gap="small", vertical_alignment="top", border=False, width="stretch")
 
@@ -321,7 +322,7 @@ with col61:
         x='IDA',
         color='Ano'
         )
-    st.plotly_chart(fig_ips, use_container_width=True)
+    st.plotly_chart(fig_ips, width='stretch')
 
 with col62:
 
@@ -334,7 +335,7 @@ with col62:
         title='Média de IPS, IEG e IDA por Ano',
         barmode='group'
         )
-    st.plotly_chart(fig_media_ips_ieg_ian, use_container_width=True)
+    st.plotly_chart(fig_media_ips_ieg_ian, width='stretch')
 
 col71, col72 = st.columns(2, gap="small", vertical_alignment="top", border=False, width="stretch")
 
@@ -352,7 +353,7 @@ with col71:
         barmode='group',
         nbins=20
         )
-    st.plotly_chart(fig_ipp, use_container_width=True)
+    st.plotly_chart(fig_ipp, width='stretch')
 
 with col72:
 
@@ -370,7 +371,7 @@ with col81:
 
     matriz_correlacao_inde = dados_multidimendisionalidade[['INDE', 'IDA', 'IEG', 'IPP', 'IPS','IAA']].corr()
     fig_correlacao_inde = px.imshow(matriz_correlacao_inde, text_auto=True)
-    st.plotly_chart(fig_correlacao_inde, use_container_width=True)
+    st.plotly_chart(fig_correlacao_inde, width='stretch')
 
 with col82:
 
@@ -383,7 +384,7 @@ with col82:
         color='Ano',
         trendline='ols'
         )
-    st.plotly_chart(fig_inde_ida, use_container_width=True)
+    st.plotly_chart(fig_inde_ida, width='stretch')
 
 col91, col92 = st.columns(2, gap="small", vertical_alignment="top", border=False, width="stretch")
 
@@ -398,7 +399,7 @@ with col91:
         color='Ano',
         trendline='ols'
         )
-    st.plotly_chart(fig_inde_ieg, use_container_width=True)
+    st.plotly_chart(fig_inde_ieg, width='stretch')
 
 with col92:
 
@@ -411,4 +412,4 @@ with col92:
         color='Ano',
         trendline='ols'
         )
-    st.plotly_chart(fig_inde_ipp, use_container_width=True)
+    st.plotly_chart(fig_inde_ipp, width='stretch')
