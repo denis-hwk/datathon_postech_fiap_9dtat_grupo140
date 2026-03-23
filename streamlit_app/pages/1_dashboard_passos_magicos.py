@@ -334,7 +334,7 @@ with col62:
 
     matriz_correlacao_ponto_de_virada = dados_ponto_de_virada[['IPV', 'IDA', 'IEG', 'IPS', 'IPP', 'IAA']].corr()
     fig_matriz_corr_ipv = px.imshow(matriz_correlacao_ponto_de_virada, text_auto=True)
-    st.plotly_chart(fig_matriz_corr_ipv, use_container_width=True)
+    st.plotly_chart(fig_matriz_corr_ipv, width='stretch')
 
 col71, col72 = st.columns(2, gap="small", vertical_alignment="top", border=False, width="stretch")
 
