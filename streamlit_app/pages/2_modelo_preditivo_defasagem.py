@@ -66,14 +66,6 @@ input_IDA_A_1 = st.number_input('Digite a nota IDA do ano anterior', min_value=0
 # Indicador de Defasagem do ano anterior (Defasagem)
 st.write('### Indicador de Defasagem do ano anterior (Defasagem)')
 input_defasagem_A_1 = float(st.slider('Indique a defasagem do ano anterior', -3, 3))
-input_defasagem_dict = {-3: 0, 
-                        -2: 1,
-                        -1: 2,
-                         0: 3,
-                         1: 4,
-                         2: 5,
-                         3: 6}
-input_defasagem_A_1 = input_defasagem_dict.get(input_defasagem_A_1)
 
 # Lista de todas as variáveis: 
 novo_aluno = [input_IAA_Atual, # Indicador de Auto Avalição do ano atual (IAA_Atual)
