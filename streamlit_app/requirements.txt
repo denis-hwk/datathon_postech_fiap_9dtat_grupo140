@@ -5,4 +5,5 @@ matplotlib
 joblib
 requests
 scikit-learn
+statsmodels 
 plotly
