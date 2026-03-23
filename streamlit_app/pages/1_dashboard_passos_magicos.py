@@ -354,7 +354,6 @@ with col72:
         dados_multidimendisionalidade,
         x='INDE',
         y='IDA',
-        color='Ano',
         trendline='ols'
         )
     st.plotly_chart(fig_inde_ida, width='stretch')
@@ -363,26 +362,24 @@ col81, col82 = st.columns(2, gap="small", vertical_alignment="top", border=False
 
 with col81:
     
-    st.write('### Histograma do Indicador Psicopedagógico Anual')
+    st.write('### Dispersão Desenvolvimento Educacional e Engajamento')
 
     fig_inde_ieg = px.scatter(
         dados_multidimendisionalidade,
         x='INDE',
         y='IEG',
-        color='Ano',
         trendline='ols'
         )
     st.plotly_chart(fig_inde_ieg, width='stretch')
 
 with col82:
 
-    st.write('### Matriz de Correlação IPV, IDA, IEG, IPS, IPP, IAA')
+    st.write('### Dispersão Desenvolvimento Educacional e Psicopedagógico')
 
     fig_inde_ipp = px.scatter(
         dados_multidimendisionalidade,
         x='INDE',
         y='IPP',
-        color='Ano',
         trendline='ols'
         )
     st.plotly_chart(fig_inde_ipp, width='stretch')
