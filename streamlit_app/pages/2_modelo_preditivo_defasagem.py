@@ -37,7 +37,7 @@ st.write('### Indicador Psicopedagógico do ano atual (IPP)')
 input_IPP_Atual = st.number_input('Digite a nota IPP do ano atual', min_value=0.00, format="%0.1f")
 
 # Indicador de Aprendizagem do ano atual (IDA)
-st.write('### Indicador de Engajamento do ano atual (IDA)')
+st.write('### Indicador de Aprendizagem do ano atual (IDA)')
 input_IDA_Atual = st.number_input('Digite a nota IDA do ano atual', min_value=0.00, format="%0.1f")
 
 # Input de indicadores do ano anterior
@@ -60,7 +60,7 @@ st.write('### Indicador Psicopedagógico do ano anterior (IPP)')
 input_IPP_A_1 = st.number_input('Digite a nota IPP do ano anterior', min_value=0.00, format="%0.1f")
 
 # Indicador de Aprendizagem do ano anterior (IDA)
-st.write('### Indicador de Engajamento do ano anterior (IDA)')
+st.write('### Indicador de Aprendizagem do ano anterior (IDA)')
 input_IDA_A_1 = st.number_input('Digite a nota IDA do ano anterior', min_value=0.00, format="%0.1f")
 
 # Indicador de Defasagem do ano anterior (Defasagem)
@@ -142,6 +142,7 @@ if st.button('Enviar'):
     status_text.empty()
     
     # Mostrar resultado
+    st.write('### Resultado da previsão de defasagem')
     if score[-1,0] <= 0.4:
        st.write("Risco baixo de defasagem")
     elif score[-1,0] > 0.4 and score > 0.6:
