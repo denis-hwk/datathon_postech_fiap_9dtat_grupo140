@@ -145,7 +145,7 @@ if st.button('Enviar'):
     st.write('### Resultado da previsão de defasagem')
     if score[-1,0] <= 0.4:
        st.write("Risco baixo de defasagem")
-    elif score[-1,0] > 0.4 and score[-1,0] > 0.6:
+    elif score[-1,0] > 0.4 and score[-1,0] < 0.6:
        st.write("Risco moderado de defasagem")
     else:
        st.write("Risco alto de defasagem")
