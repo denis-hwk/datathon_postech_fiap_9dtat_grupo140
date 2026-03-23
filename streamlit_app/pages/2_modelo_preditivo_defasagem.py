@@ -142,4 +142,4 @@ if st.button('Enviar'):
     status_text.empty()
     
     # Mostrar resultado
-    st.write("Probabilidade do aluno estar em defasagem: ", (score[-1,0]*100), '%')
+    st.write(f"Probabilidade do aluno estar em defasagem: {score * 100: 0.1f} %")
